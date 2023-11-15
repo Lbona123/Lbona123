@@ -1,6 +1,6 @@
 <?php
 
-@include 'config.php';
+@include 'config.html';
 
 session_start();
 
@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
       if($row['user_type'] == 'admin'){
 
          $_SESSION['admin_name'] = $row['name'];
-         header('location:admin_page.php');
+         header('location:admin_page.html');
 
       }
      
@@ -65,7 +65,7 @@ if(isset($_POST['submit'])){
       <p>Enter Your Password<sup>*</sup></p>
       <input type="password" name="password" required placeholder="enter your password">
       <input type="submit" name="submit" value="login now" class="form-btn">
-      <p>don't have an account? <a href="register_form.php">register now</a></p>
+      <p>don't have an account? <a href="register_form.html">register now</a></p>
    </form>
 
 </div>
